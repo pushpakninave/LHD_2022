@@ -1,3 +1,6 @@
+/*comment remaining methods to run the specific method.*/
+
+
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
@@ -12,18 +15,15 @@ public class reverseString {
         String inputString = sc.nextLine();
         String revString = "";
         
-        /*naive_Method 1
         
         
+        //naive_Method 1
         for(int i=0;i<inputString.length();i++){
             revString = inputString.charAt(i) + revString;
         }
 
-        */
         
-        
-        /*naive_Method 2 using swaps to reduce timecomplexity
-        
+        //naive_Method 2 using swaps to reduce timecomplexity
         char[] inputArray = inputString.toCharArray();
         for (int i = 0; i < inputArray.length && i<inputArray.length-i; i++) {
             char temp = inputArray[i];
@@ -32,7 +32,7 @@ public class reverseString {
         }
         revString = new String(inputArray);
         
-        */
+     
 
         System.out.println("Reversed string: " + revString);
     }
